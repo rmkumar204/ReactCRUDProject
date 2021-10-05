@@ -1,13 +1,16 @@
 import React from 'react';
 import { IoMdMenu } from "react-icons/io";
 import { VscCircleFilled } from "react-icons/vsc";
-
+import { useState } from 'react';
 import { IoPersonAddSharp,IoMicOffSharp,IoVolumeLowSharp } from "react-icons/io5";
 import {FaPhone, FaUserCircle} from "react-icons/fa";
 import { IconContext } from "react-icons";
+import Addparticipants from './Addparticipants';
 function Audio(){
+const[addpopup,setAddpopup]=useState(false);
 return(
 <div className="mainclass">
+<Addparticipants trigger={addpopup} setTrigger={setAddpopup}></Addparticipants>
     <div className=" main">
         <IconContext.Provider className="iconsize" value={{size:"30px"}}>
         <div className="corner">
@@ -23,10 +26,15 @@ return(
         </div>
         <div>
             <form className="formaudiclass">
-                <IoPersonAddSharp color="blue"/>
+                
+                <IoPersonAddSharp onClick={()=>setAddpopup(true)} color="blue"/>
+                
+                
+               
                 <IoMicOffSharp/>
+               
                 <IoVolumeLowSharp/>
-                <FaPhone className="phone" color="red"/>
+                <FaPhone  className="phone" color="red"/>
             </form>
         </div>
         </IconContext.Provider>

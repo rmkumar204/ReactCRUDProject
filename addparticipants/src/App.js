@@ -1,17 +1,12 @@
 
 import './App.css';
-import Audio from './Audio';
-
+import Addparticipants from './Addparticipants';
 function App() {
-  
   return (
-   
     <div className="App">
-     <Audio/>
-     
-     
+      <Addparticipants/>
+
     </div>
-   
   );
 }
 

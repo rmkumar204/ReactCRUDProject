@@ -2,10 +2,16 @@
 import './App.css';
 import Video from './Video';
 
+
+
 function App() {
   return (
+    
     <div className="App">
-      <Video/><br/>
+     <Video/>
+
+     <br/>
+     
     </div>
 
   );

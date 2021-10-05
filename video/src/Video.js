@@ -5,9 +5,13 @@ import {FaVideoSlash} from "react-icons/fa";
 import { IoPersonAddSharp,IoMicOffSharp,IoVolumeLowSharp } from "react-icons/io5";
 import {FaPhone, FaUserCircle} from "react-icons/fa";
 import { IconContext } from "react-icons";
+import Addparticipants from './Addparticipants';
+import {useState} from 'react';
 function Video(){
+    const[addpopup,setAddpopup]=useState(false);
 return(
 <div className="mainclass">
+<Addparticipants trigger={addpopup} setTrigger={setAddpopup}/>
     <div className=" main">
         <IconContext.Provider className="iconsize" value={{size:"30px"}}>
         <div className="corner">
@@ -23,7 +27,9 @@ return(
         </div>
         <div>
             <form className="formclass">
-                <IoPersonAddSharp color="blue"/>
+            
+                <IoPersonAddSharp onClick={()=>setAddpopup(true)} color="blue"/>
+                
                 <IoMicOffSharp/>
                 <FaVideoSlash/>
                 <IoVolumeLowSharp/>
@@ -35,4 +41,5 @@ return(
     </div>
 )
 }
+
 export default Video;
