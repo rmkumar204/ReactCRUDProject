@@ -1,0 +1,190 @@
+.App{
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+.head{
+  top: 0;
+  left: 0;
+  width: 100%;
+ position: fixed;
+ z-index: 1;
+ background-color: white;
+}
+.header{
+  padding-top: 10px;
+ margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.header h1{
+  color: blue;
+  font-weight: 700;
+}
+.lang{
+  background-color: rgb(240, 25, 43);
+  border-radius: 5px;
+  font-weight: bold;
+  color: beige;
+  outline: none;
+  padding:10px;
+  border: none;
+  width: 150px;
+}
+.line
+  {
+   
+    font-weight:900;
+  font-size: large;
+  opacity: 0.3;
+  margin-top: 0;
+  
+  /* margin-top: 100px;
+  margin-bottom: 40px; */
+  
+}
+.check{
+
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  
+}
+
+/* ............... */
+ /* .login-popup{
+  
+  z-index: 1;
+  
+  
+ 
+}  */
+.login-popup .box{
+  
+  margin-left: 250px;
+  
+  background-color: #ffffff;
+  /* position: fixed; */
+  width: 1200px;
+  /* height: 600px; */
+   top: 50%;
+  left: 50%; 
+   transform: translate(-50%,-50%); 
+  border: 1px solid rgb(218, 216, 216);
+  border-radius: 8px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.login-popup .box .login-profile{
+flex: 0 0 50%;
+max-width: 100%;  
+background: rgb(217, 220, 223);
+}
+.login-popup .box .login-profile span{
+  font-weight: 700;
+}
+.login-popup .box .login-profile h4{
+  margin-bottom: 50px;
+  margin-top: 250px;
+}
+.login-popup .box form{
+  flex: 0 0 50%;
+  max-width: 100%;
+  padding:40px ;
+  margin-right: 0px;
+}
+.login-popup .box form .form-group {
+  height: 45px;
+  width: 100%;
+  border: 2px solid rgb(180, 177, 177);
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+.login-popup .box form .form-group1 {
+  height: 45px;
+  width: 100%;
+  padding: 8px;
+  border: 2px solid rgb(180, 177, 177);
+  border-radius: 5px;
+  /* margin-bottom: 30px; */
+}
+.login-popup .box form .form-group1:focus{
+  outline: none;
+}
+.login-popup .box form .form-group:focus{
+  outline: none;
+}
+.login-popup .box form label{
+  font-weight: 600;
+  font-size: 20px;
+}
+.login-popup .box form span{
+  color: blue;
+  font-weight: 600;
+ 
+}
+.login-popup .box form .forgot{
+  font-weight: 600;
+  font-size: 20px;
+
+  text-align: right;
+  display: block;
+
+}
+
+.login-popup .box form .form-log{
+  height: 45px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgb(33, 33, 223);
+width: 100%;
+border-radius: 5px;
+font-size: 20px;
+}
+ 
+.login-popup .box form .password{
+  margin-bottom: 50px;
+}
+.login-popup .box form p{
+  text-align: center;
+  font-weight: 600;
+}
+/* loginprofile */
+.login-profile{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px;
+
+}
+.login-profile h1,h2{
+  font-weight: 700;
+}
+.loginpop{
+  margin-top: 200px;
+  margin-left: 300px;
+  padding-top: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  
+}
+
+.footer{
+  text-align: center;
+  background: rgb(83, 49, 57);
+  position: relative;
+  bottom: 200px;
+  
+  margin-left: 100px;
+  
+}
+.staycheck{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}

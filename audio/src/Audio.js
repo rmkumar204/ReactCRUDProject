@@ -11,6 +11,7 @@ const[addpopup,setAddpopup]=useState(false);
 return(
 <div className="mainclass">
 <Addparticipants trigger={addpopup} setTrigger={setAddpopup}></Addparticipants>
+{/* 2.in above line trigger addpopup becomes true and component is enabled and now it will display in screen*/}
     <div className=" main">
         <IconContext.Provider className="iconsize" value={{size:"30px"}}>
         <div className="corner">
@@ -28,6 +29,7 @@ return(
             <form className="formaudiclass">
                 
                 <IoPersonAddSharp onClick={()=>setAddpopup(true)} color="blue"/>
+                {/*1. above line performs the changes in usestate */}
                 
                 
                

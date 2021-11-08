@@ -5,6 +5,7 @@ import { FaUserCircle} from "react-icons/fa";
 
 function Addparticipants(props) {
     return     (props.trigger)?(
+        // 3.from audio.js props of addparticipants is trigger and it has become true and whole compo return will be executed
         <div className="size">
     <div className="helpclass">
         
@@ -13,8 +14,10 @@ function Addparticipants(props) {
         <div className="cross" >
            
             <FaArrowLeft onClick={()=>props.setTrigger(false)} />
+            {/* 1.1 in audio.js props setTrigger is in setAddpopup true and will become false so props of trigger will become false 
+            and entire addparticipant component will be disabled */}
             {props.children}
-        
+            
             </div>
             
         <div className="help">Add Participants</div>
